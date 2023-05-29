@@ -9,7 +9,7 @@ export default function Custom404() {
                     <div className="absolute">
                         <div className="">
                             <h1 className="my-2 text-gray-800 font-bold text-2xl">
-                                Looks like you've found the
+                                Looks like you&apos;ve found the
                                 doorway to the great nothing
                             </h1>
                             <p className="my-2 text-gray-800">Sorry about that! Please visit our hompage to get where you need
