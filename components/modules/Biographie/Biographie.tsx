@@ -4,5 +4,6 @@ export default function Biographie() {
     <div>
       <h1>hello</h1>
     </div>
+
   );
 }
