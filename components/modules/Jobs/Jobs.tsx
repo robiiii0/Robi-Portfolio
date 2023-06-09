@@ -16,7 +16,7 @@ export default function Jobs() {
           <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700 w-10/12 mx-auto" />
         </Transition.reveal>
 
-        <div className="flex flex-col lg:flex-row justify-between w-11/12 lg:w-3/4 mx-auto lg:gap-8">
+        <div className="flex flex-col lg:flex-row justify-between w-12/12 lg:w-3/4 mx-auto lg:gap-8">
           <div className="w-full lg:w-1/3">
             <Transition.reveal>
               <p className="font-Monserat text-2xl font-bold mb-4 lg:mb-8">

@@ -3,6 +3,6 @@ const nextConfig = {};
 
 module.exports = {
   images: {
-    domains: ["media.licdn.com", "upload.wikimedia.org"],
+    domains: ["media.licdn.com", "upload.wikimedia.org", "www.eloken.com"],
   },
 };

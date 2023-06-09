@@ -9,13 +9,7 @@
     U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-    min-height: 90vh;
-}
+
 
 section {
     box-sizing: border-box;

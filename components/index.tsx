@@ -7,6 +7,7 @@ export default function Website() {
       <components.Skills />
       <components.Biographie />
       <components.Jobs />
+        <components.Companies />
       <components.Contact />
     </>
   );
