@@ -43,7 +43,7 @@ export default function HomePage() {
   const [isFrench, setIsFrench] = useState(false);
 
   useEffect(() => {
-    const userLang = navigator.language || navigator.userLanguage;
+    const userLang = navigator.language;
 
     if (userLang.startsWith("fr")) {
       console.log("Texte en français");
