@@ -16,23 +16,23 @@ export default function Jobs() {
           <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700 w-10/12 mx-auto" />
         </Transition.reveal>
 
-        <div className="flex flex-col lg:flex-row justify-between w-12/12 lg:w-3/4 mx-auto lg:gap-8">
+        <div className="flex flex-col lg:flex-row justify-between w-12/12 lg:w-3/4 mx-auto lg:gap-8 items-center">
           <div className="w-full lg:w-1/3">
             <Transition.reveal>
-              <p className="font-Monserat text-2xl font-bold mb-4 lg:mb-8">
+              <p className="font-Monserat  text-base  md:text-2xl mt-12 md:mt-24 font-bold mb-4 lg:mb-8">
                 Realization of Responsive Components for Eloken&apos;s Website
                 and Products
               </p>
             </Transition.reveal>
             <Transition.reveal>
-              <p className="mt-12 font-Monserat">
+              <p className=" font-Monserat text-sm  md:text-lg mt-12 md:mt-24">
                 In the context of Eloken, the web development project involved
                 the realization of responsive components for both their website
                 and the products featured on their online platform. By applying
                 their expertise in front-end development.
               </p>
             </Transition.reveal>
-            <div className="flex mt-5">
+            <div className="flex  text-sm  md:text-lg mt-12 md:mt-5">
               <p className="rounded-2xl bg-gray-500 py-2 px-4 text-white">
                 Next.js
               </p>
@@ -44,7 +44,7 @@ export default function Jobs() {
 
           <a
             href="https://eloken.com"
-            className="hover:scale-110 transition duration-300"
+            className="hover:scale-110 transition duration-300 text-sm mt-12 md:mt-0 md:text-lg "
           >
             <Transition.reveal>
               <Image
@@ -61,10 +61,10 @@ export default function Jobs() {
         <Transition.reveal>
           <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700 w-10/12 mx-auto" />
         </Transition.reveal>
-        <div className="flex flex-col-reverse lg:flex-row justify-between w-11/12 lg:w-3/4 mx-auto lg:gap-8">
+        <div className="flex flex-col-reverse lg:flex-row justify-between w-11/12 lg:w-3/4 mx-auto lg:gap-8 items-center">
           <a
             href="https://trello.com"
-            className="hover:scale-110 transition duration-300"
+            className="hover:scale-110 transition duration-300  mt-12 md:mt-0"
           >
             <Transition.reveal>
               <Image
@@ -77,12 +77,12 @@ export default function Jobs() {
           </a>
           <div className="w-full lg:w-1/3">
             <Transition.reveal>
-              <p className="font-Monserat text-2xl font-bold mb-4 lg:mb-8">
+              <p className="font-Monserat text-base  md:text-lg mt-12 md:mt-24 font-bold mb-4 lg:mb-8">
                 Creating a High-Quality Clone of Trello
               </p>
             </Transition.reveal>
             <Transition.reveal>
-              <p className="mt-12 font-Monserat">
+              <p className="font-Monserat text-sm  md:text-lg mt-5 md:mt-12">
                 In the context of my portfolio, I undertook the project of
                 creating a clone of the renowned website Trello. Throughout this
                 endeavor, I successfully developed a responsive and intuitive
@@ -90,9 +90,9 @@ export default function Jobs() {
                 functionalities of Trello.
               </p>
             </Transition.reveal>
-            <div className="flex mt-5">
+            <div className="flex text-sm md:text-lg mt-5 md:mt-24" >
               <Transition.reveal>
-                <p className="rounded-2xl bg-gray-500 py-2 px-4 text-white">
+                <p className="rounded-2xl bg-gray-500 py-2 px-4 text-white ">
                   Next.js
                 </p>
               </Transition.reveal>

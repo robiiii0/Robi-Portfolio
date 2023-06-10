@@ -51,8 +51,8 @@ export default function App() {
 
   return (
       <>
-        <div className="mt-64">
-          <div className="flex justify-center items-center flex-col md:flex-row">
+        <div className="mt-32 md:mt-64 ">
+          <div className="flex justify-center items-center  flex-col md:flex-row ">
             <Transition.reveal>
               <Image
                   src={img1}
@@ -62,7 +62,7 @@ export default function App() {
                   className="rounded-2xl"
               />
             </Transition.reveal>
-            <div className="ml-24 text-lg">
+            <div className="lg:ml-24 text-sm  md:text-lg">
               <Transition.reveal>
                 <hr className="w-full h-1 mx-auto my-4 bg-gray-300 border-0 rounded md:my-10 dark:bg-gray-700" />
               </Transition.reveal>
@@ -133,7 +133,7 @@ export default function App() {
               <div className="flex">
                 <Transition.reveal>
                   <p className="font-monserrat">
-                    &nbsp;&nbsp;&nbsp;&nbsp;{isFrench ? "Anglais : " : "English: "}&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;{isFrench ? "Anglais: " : "English:"}&nbsp;
                   </p>
                 </Transition.reveal>
                 <Transition.reveal>
@@ -145,7 +145,7 @@ export default function App() {
               <div className="flex mt-2">
                 <Transition.reveal>
                   <p className="font-monserrat">
-                    {isFrench ? "Loisirs : " : "Hobbies: "}&nbsp;
+                    {isFrench ? "Loisirs:" : "Hobbies:"}&nbsp;
                   </p>
                 </Transition.reveal>
                 <Transition.reveal>
@@ -162,17 +162,17 @@ export default function App() {
 
             </div>
           </div>
-          <div className="mt-36 w-2/3 mx-auto">
+          <div className=" mt-12 md:mt-36 w-full md:w-2/3 mx-auto">
             <div className="text-center">
               <Transition.reveal>
-                <p className="font-monserrat text-lg">
+                <p className="font-monserrat text-sm  md:text-lg mt-12 md:mt-24">
                   {isFrench
                       ? "Je suis actuellement en troisième année à Epitech Lyon, une école d'informatique renommée. Mon parcours à Epitech est enrichissant et stimulant, me permettant de développer mes compétences en programmation."
                       : "I am currently in my third year at Epitech Lyon, a renowned computer science school. My journey at Epitech has been enriching and stimulating, allowing me to develop my programming skills."}
                 </p>
               </Transition.reveal>
             </div>
-            <div className="flex justify-center mt-12">
+            <div className="flex justify-center mt-12 md:mt-2">
               <Transition.reveal>
                 <Image
                     src={
@@ -185,7 +185,7 @@ export default function App() {
               </Transition.reveal>
             </div>
 
-            <div className="font-monserrat text-lg mt-24 w-full flex flex-col md:flex-row justify-between items-center">
+            <div className="font-monserrat text-sm  md:text-lg mt-12 md:mt-24 flex flex-col md:flex-row justify-between items-center">
               <div className="w-full md:w-1/2">
                 <Transition.reveal>
                   <p>
@@ -201,16 +201,16 @@ export default function App() {
                 </div>
               </Transition.reveal>
             </div>
-            <div className="font-monserrat text-lg mt-24 w-full flex flex-col-reverse md:flex-row justify-between items-center">
+            <div className="font-monserrat text-sm  md:text-lg mt-8 md:mt-12 w-full flex flex-col-reverse md:flex-row justify-between items-center">
               <a href="https://www.flaticon.com/fr/icones-gratuites/developpement-web">
                 <Transition.reveal>
-                  <div className="mt-8 md:mt-0">
+                  <div className="mt-8 md:mt-24">
                     <Image src={img4} alt={"/"} width={350} height={500} />
                   </div>
                 </Transition.reveal>
               </a>
 
-              <div className="w-full md:w-1/2">
+              <div className="w-full md:w-1/2 text-sm  md:text-lg mt-12 md:mt-24">
                 <Transition.reveal>
                   <p>
                     {isFrench
@@ -220,7 +220,7 @@ export default function App() {
                 </Transition.reveal>
               </div>
             </div>
-            <div className="font-monserrat text-lg mt-24 w-full flex flex-col md:flex-row justify-between items-center">
+            <div className="font-monserrat text-sm  md:text-lg mt-12 md:mt-24 w-full flex flex-col md:flex-row justify-between items-center">
               <div className="w-full md:w-1/2">
                 <Transition.reveal>
                   <p>

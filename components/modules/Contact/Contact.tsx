@@ -73,7 +73,7 @@ const EmailIcon = () => {
             </Transition.reveal>
             <Transition.reveal>
               <a
-                  href="mailto:robindevpro1@gmail.com"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=robindevpro1@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center"
