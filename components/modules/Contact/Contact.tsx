@@ -19,7 +19,7 @@ const EmailIcon = () => {
       <div className="text-center mt-24">
         <Transition.reveal>
           <p className="text-blue-400 font-monserrat text-6xl">
-            {isFrench ? "Contactez-nous maintenant !" : "Let's contact us now!"}
+            {isFrench ? "Contactez-moi maintenant !" : "Let's contact me now!"}
           </p>
         </Transition.reveal>
         <div className="flex flex-col md:flex-row justify-center mt-16 md:mt-36 space-y-8 md:space-y-0 md:space-x-20">

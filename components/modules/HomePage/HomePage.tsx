@@ -84,7 +84,7 @@ export default function HomePage() {
               <div className="flex justify-center md:mt-8">
                 <Transition.reveal>
                   <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                    {isFrench ? "Je suis" : "I'm"}
+                    {isFrench ? "Moi c'est" : "I'm"}
                   </h1>
                 </Transition.reveal>
                 <Transition.reveal>
@@ -108,18 +108,6 @@ export default function HomePage() {
                   >
                     {isFrench ? "Commencer" : "Get started"} ↓
                   </a>
-                  <Transition.reveal>
-
-                    <a
-                        href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=robindevpro1@gmail.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-sm font-semibold leading-6 text-gray-900 transition ease-in-out duration-300 hover:scale-110"
-                    >
-                      {isFrench ? "Contactez-moi" : "Contact me"}{" "}
-                      <span aria-hidden="true">→</span>
-                    </a>
-                  </Transition.reveal>
                 </div>
               </div>
             </div>

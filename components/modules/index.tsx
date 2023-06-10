@@ -11,6 +11,7 @@ const Biographie = dynamic(
   () => import("@/components/modules/Biographie/Biographie")
 );
 const Companies = dynamic(() => import('@/components/modules/companies/companies'))
+const Stats = dynamic(() => import('@/components/modules/Stats/Stats'))
 
 export const components = {
   inDev: InDev,
@@ -20,4 +21,5 @@ export const components = {
   Contact: Contact,
   Biographie: Biographie,
   Companies: Companies,
+  Stats: Stats,
 };
