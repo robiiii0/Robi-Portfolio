@@ -9,9 +9,9 @@ const statsEnglish = [
 ];
 
 const statsFrench = [
-    { id: 1, name: "Missions réalisés", value: "4 / 4" },
+    { id: 1, name: "Missions réalisées", value: "4 / 4" },
     { id: 2, name: "Clients satisfaits", value: "100 %" },
-    { id: 3, name: "Commande en France", value: "3 / 4" },
+    { id: 3, name: "Commandes en France", value: "3 / 4" },
 ];
 
 export default function Stats() {
