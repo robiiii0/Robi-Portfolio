@@ -69,7 +69,7 @@ export default function HomePage() {
                 }}
             />
           </div>
-          <div className="w-full mt-[-7rem] mx-auto py-32 sm:py-48 lg:py-52">
+          <div className="w-screen mt-[-7rem] mx-auto py-32 sm:py-48 lg:py-52">
             <div className="text-center">
               {transitions(({ innerHeight, ...rest }, item) => (
                   <animated.div className={styles.transitionsItem} style={rest}>

@@ -4,9 +4,9 @@ import { Transition } from "@/components/utils";
 
 export default function Skills() {
   return (
-      <div className="w-3/4 mx-auto text-center mt-[-5rem]">
+      <div className=" w-screen text-center mt-[-5rem]">
         <Transition.reveal>
-          <h1 className="font-bold">The programming languages I practice.</h1>
+          <h1 className="font-bold ">The programming languages I practice.</h1>
         </Transition.reveal>
 
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:flex flex-wrap justify-center gap-4 mt-8">

@@ -167,10 +167,10 @@ export default function App() {
 
           </div>
         </div>
-        <div className=" mt-12 md:mt-36 w-full md:w-2/3 mx-auto">
-          <div className="text-center">
+        <div className=" mt-12 md:mt-36 md:w-2/3 w-screen md:mx-auto">
+          <div className="text-center ">
             <Transition.reveal>
-              <p className="font-monserrat text-sm  md:text-lg mt-12 md:mt-24">
+              <p className="font-monserrat text-sm   md:text-lg   mt-12 md:mt-24">
                 {isFrench
                     ? "Je suis actuellement en troisième année à Epitech Lyon, une école d'informatique renommée. Mon parcours à Epitech est enrichissant et stimulant, me permettant de développer mes compétences en programmation."
                     : "I am currently in my third year at Epitech Lyon, a renowned computer science school. My journey at Epitech has been enriching and stimulating, allowing me to develop my programming skills."}
@@ -191,7 +191,7 @@ export default function App() {
           </div>
 
           <div className="font-monserrat text-sm  md:text-lg mt-12 md:mt-24 flex flex-col md:flex-row justify-between items-center">
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-1/2 px-4">
               <Transition.reveal>
                 <p>
                   {isFrench
@@ -215,7 +215,7 @@ export default function App() {
               </Transition.reveal>
             </a>
 
-            <div className="w-full md:w-1/2 text-sm  md:text-lg mt-12 md:mt-24">
+            <div className="w-full md:w-1/2 text-sm  md:text-lg mt-12 md:mt-24 px-4">
               <Transition.reveal>
                 <p>
                   {isFrench
@@ -226,7 +226,7 @@ export default function App() {
             </div>
           </div>
           <div className="font-monserrat text-sm  md:text-lg mt-12 md:mt-24 w-full flex flex-col md:flex-row justify-between items-center">
-            <div className="w-full md:w-1/2">
+            <div className="w-full md:w-1/2 px-4">
               <Transition.reveal>
                 <p>
                   {isFrench
@@ -245,7 +245,7 @@ export default function App() {
           </div>
           <div className="text-center mt-12 md:mt-24">
             <Transition.reveal>
-              <p className="font-monserrat text-sm  md:text-lg">
+              <p className="font-monserrat text-sm  md:text-lg px-4">
                 {isFrench
                     ? "Je suis passionné par la technologie et la création de solutions innovantes qui améliorent la vie des gens. Mon objectif est de continuer à me développer en tant que développeur polyvalent, en explorant de nouvelles technologies et en repoussant les limites de ce qui est possible."
                     : "I am passionate about technology and creating innovative solutions that improve people's lives. My goal is to continue growing as a versatile developer, exploring new technologies and pushing the boundaries of what is possible."}
