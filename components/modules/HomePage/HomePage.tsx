@@ -81,7 +81,7 @@ export default function HomePage() {
                     </animated.div>
                   </animated.div>
               ))}
-              <div className="flex justify-center lg:mt-8">
+              <div className="flex justify-center md:mt-8">
                 <Transition.reveal>
                   <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                     {isFrench ? "Je suis" : "I'm"}
@@ -93,9 +93,9 @@ export default function HomePage() {
                   </h1>
                 </Transition.reveal>
               </div>
-              <div className=" w-full lg:w-2/4 mx-auto">
+              <div className=" w-full md:w-2/4 mx-auto">
                 <Transition.reveal>
-                  <p className="mt-6 text-lg leading-8 text-gray-600">
+                  <p className="mt-6 text-sm md:text-lg text-gray-600">
                     {isFrench
                         ? "Je suis un développeur web passionné axé sur le développement front-end et je poursuis actuellement mes études à Epitech. Avec un fort dévouement à la création d'expériences web engageantes et conviviales."
                         : "I'm a passionate web developer focused on front-end development, and I'm currently pursuing my studies at Epitech. With a strong dedication to crafting engaging and user-friendly web experiences."}
@@ -106,7 +106,7 @@ export default function HomePage() {
                       href="#"
                       className="rounded-md animate-bounce bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                   >
-                    {isFrench ? "Commencer" : "Get started"}
+                    {isFrench ? "Commencer" : "Get started"} ↓
                   </a>
                   <Transition.reveal>
 
