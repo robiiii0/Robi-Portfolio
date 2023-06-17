@@ -31,7 +31,7 @@ export default function Jobs() {
             <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700 w-10/12 mx-auto" />
           </Transition.reveal>
 
-          <div className="flex flex-col lg:flex-row justify-between w-screen lg:w-3/4 mx-auto lg:gap-8 items-center">
+          <div className="flex flex-col lg:flex-row justify-between w-screen px-6 lg:w-3/4 mx-auto lg:gap-8 items-center">
             <div className="w-full lg:w-1/3">
               <Transition.reveal>
                 <p className="font-Monserat text-base md:text-2xl px-4 mt-4 md:mt-24 font-bold mb-4 lg:mb-8">
@@ -74,9 +74,9 @@ export default function Jobs() {
         </div>
         <div>
           <Transition.reveal>
-            <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700 w-10/12 mx-auto" />
+            <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700  w-10/12 mx-auto" />
           </Transition.reveal>
-          <div className="flex flex-col-reverse lg:flex-row justify-between w-11/12 lg:w-3/4 mx-auto lg:gap-8 items-center">
+          <div className="flex flex-col-reverse lg:flex-row justify-between px-6  w-11/12 lg:w-3/4 mx-auto lg:gap-8 items-center">
             <a
                 href="https://trello.com"
                 className="hover:scale-110 transition duration-300  mt-12 md:mt-0"

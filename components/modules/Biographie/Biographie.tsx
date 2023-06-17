@@ -50,7 +50,7 @@ export default function App() {
   }, []);
 
   return (
-      <div className="mt-32 md:mt-64 ">
+      <div className="mt-32 md:mt-64 " id="StartBio">
         <div className="flex justify-center items-center  flex-col md:flex-row ">
           <Transition.reveal>
             <Image
@@ -167,7 +167,7 @@ export default function App() {
 
           </div>
         </div>
-        <div className=" mt-12 md:mt-36 md:w-2/3 w-screen md:mx-auto">
+        <div className=" mt-12 md:mt-36 md:w-2/3 px-6 w-screen md:mx-auto">
           <div className="text-center ">
             <Transition.reveal>
               <p className="font-monserrat text-sm   md:text-lg   mt-12 md:mt-24">

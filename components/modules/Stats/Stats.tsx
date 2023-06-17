@@ -32,7 +32,7 @@ export default function Stats() {
         <>
             <div className="bg-white py-24 sm:py-32">
                 <Transition.reveal>
-                <p className="text-center text-4xl font-monserrat font-bold">
+                <p className="text-center text-3xl font-monserrat font-bold">
                     {isFrench ? "Robin c'est" : "Robin it's"}
                 </p>
                     </Transition.reveal>
@@ -41,7 +41,7 @@ export default function Stats() {
                         {currentStats.map((stat) => (
                             <div key={stat.id} className="mx-auto flex max-w-xs flex-col gap-y-4">
                                 <Transition.reveal>
-                                <dt className="text-base leading-7 text-gray-600">{stat.name}</dt>
+                                <dt className="text-lg leading-7 text-gray-600">{stat.name}</dt>
                                     </Transition.reveal>
                                 <Transition.reveal>
                                 <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">

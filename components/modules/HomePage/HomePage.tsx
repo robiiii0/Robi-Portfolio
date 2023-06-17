@@ -1,4 +1,5 @@
 'use client';
+import '@/components/modules/Biographie/Biographie'
 import React, { useState, useCallback, useRef, useEffect } from "react";
 import { useTransition, animated } from "@react-spring/web";
 import { Dialog } from "@headlessui/react";
@@ -6,11 +7,19 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import styles from "../Styles/styles.module.css";
 import Image from "next/image";
 import { Transition } from "@/components/utils";
+import {Button, Link as ScrollLink} from 'react-scroll';
+import { Link, animateScroll as scroll } from 'react-scroll';
+
 
 export default function HomePage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const ref = useRef<ReturnType<typeof setTimeout>[]>([]);
   const [items, set] = useState<string[]>([]);
+
+
+
+
+
   const transitions = useTransition(items, {
     from: {
       opacity: 0,
@@ -54,7 +63,13 @@ export default function HomePage() {
     }
   }, []);
 
+  const test = () => {
+    console.log("Button clicked");
+  };
+
+
   return (
+      <>
       <div className="bg-white">
         <div className="relative isolate px-6 pt-14 lg:px-8">
           <div
@@ -69,7 +84,7 @@ export default function HomePage() {
                 }}
             />
           </div>
-          <div className="w-screen mt-[-7rem] mx-auto py-32 sm:py-48 lg:py-52">
+          <div className="w-screen mt-[-7rem] mx-auto py-32  sm:py-48 lg:py-52">
             <div className="text-center">
               {transitions(({ innerHeight, ...rest }, item) => (
                   <animated.div className={styles.transitionsItem} style={rest}>
@@ -81,9 +96,9 @@ export default function HomePage() {
                     </animated.div>
                   </animated.div>
               ))}
-              <div className="flex justify-center md:mt-8">
+              <div className="flex justify-center md:mt-8 sm:mt-12">
                 <Transition.reveal>
-                  <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                  <h1  className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
                     {isFrench ? "Moi c'est" : "I'm"}
                   </h1>
                 </Transition.reveal>
@@ -93,7 +108,7 @@ export default function HomePage() {
                   </h1>
                 </Transition.reveal>
               </div>
-              <div className=" w-full md:w-2/4 mx-auto">
+              <div className=" w-full md:w-2/4 px-6 mx-auto">
                 <Transition.reveal>
                   <p className="mt-6 text-sm md:text-lg text-gray-600">
                     {isFrench
@@ -102,12 +117,15 @@ export default function HomePage() {
                   </p>
                 </Transition.reveal>
                 <div className="mt-10 flex items-center justify-center gap-x-6">
-                  <a
-                      href="#"
-                      className="rounded-md animate-bounce bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  {/*<ScrollLink   smooth={true}  to={'StartBio'}  duration={500}>*/}
+                  <button
+                      className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                      onClick={test}
                   >
-                    {isFrench ? "Commencer" : "Get started"} ↓
-                  </a>
+                    {isFrench ? "Ce site est actuellement en developpement" : "This site is currently under development"}
+                  </button>
+
+                  {/*</ScrollLink>*/}
                 </div>
               </div>
             </div>
@@ -126,5 +144,6 @@ export default function HomePage() {
           </div>
         </div>
       </div>
+      </>
   );
 }

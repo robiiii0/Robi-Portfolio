@@ -18,7 +18,7 @@ const TrustedClients = () => {
     }, []);
 
     return (
-        <div className="text-center mt-24">
+        <div className="text-center ">
             <Transition.reveal>
                 <h2 className="text-3xl font-bold mb-4">
                     {isFrench ? "Ils m'ont fait confiance" : "They Trusted Me"}
@@ -31,7 +31,7 @@ const TrustedClients = () => {
                         alt={isFrench ? "Clients de confiance" : "Trusted Clients"}
                         width={300}
                         height={200}
-                        className="rounded-md"
+                        className="rounded-md mt-12"
                     />
                 </Transition.reveal>
             </div>
