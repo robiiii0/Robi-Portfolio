@@ -1,7 +1,15 @@
 import dynamic from "next/dynamic";
 
-const reveal = dynamic(() => import("@/components/utils/reveal"));
+const revealFromBottom = dynamic(
+  () => import("@/components/utils/revealFromBottom")
+);
+const revealForTitle = dynamic(() => import("@/components/utils/revealTitle"));
+const revealFromLeft = dynamic(
+  () => import("@/components/utils/revealFromLeft")
+);
 
 export const Transition = {
-  reveal: reveal,
+  revealFromLeft: revealFromLeft,
+  revealForTitle: revealForTitle,
+  revealFromBottom: revealFromBottom,
 };

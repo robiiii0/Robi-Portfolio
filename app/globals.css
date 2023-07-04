@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.font-robot {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.font-monserrat {
+  font-family: "Montserrat", sans-serif;
+}
+
+.font-rubik {
+  font-family: "Rubik", sans-serif;
+}
