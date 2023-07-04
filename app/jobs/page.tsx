@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { componentsDescribe } from "@/components/modules";
 
 export default function jobs() {

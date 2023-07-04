@@ -50,13 +50,6 @@ const TrustedClients = () => {
             </Transition.revealFromLeft>
           </div>
         </div>
-        <div>
-          {/*<Image src={""}*/}
-          {/*       alt={"/"}*/}
-          {/*       width={550}*/}
-          {/*       height={550}*/}
-          {/*       />*/}
-        </div>
       </div>
     </>
   );

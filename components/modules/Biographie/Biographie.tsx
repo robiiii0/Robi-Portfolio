@@ -1,9 +1,7 @@
 "use client";
-import React, { useRef, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
-  useInView,
   motion,
-  AnimatePresence,
   useAnimation,
 } from "framer-motion";
 import Image from "next/image";
@@ -15,27 +13,9 @@ import img5 from "@/public/dev-dapplications.png";
 import img6 from "@/public/Pasted Graphic.png";
 import img7 from "@/public/Pasted Graphic 1.png";
 import { Transition } from "@/components/utils";
-import img8 from "@/public/imgIphone.png";
 import { useRouter } from "next/navigation";
 
-function Section({ children }: { children: React.ReactNode }) {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
 
-  return (
-    <section ref={ref}>
-      <span
-        style={{
-          transform: isInView ? "none" : "translateX(-200px)",
-          opacity: isInView ? 1 : 0,
-          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s",
-        }}
-      >
-        {children}
-      </span>
-    </section>
-  );
-}
 
 export default function App() {
   const [isFrench, setIsFrench] = useState(false);

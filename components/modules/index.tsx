@@ -1,7 +1,9 @@
 import dynamic from "next/dynamic";
-import Hero from "@/components/modules/HomePage/Hero";
-import Finder from "@/components/modules/Finder/Finder";
-import Contact2 from "@/components/modules/Contact/contact2";
+
+
+const Hero = dynamic(() => import("@/components/modules/HomePage/Hero"))
+const Finder = dynamic(() => import("@/components/modules/Finder/Finder"))
+const Contact2 = dynamic(() => import("@/components/modules/Contact/contact2"))
 
 const InDev = dynamic(() => import("@/components/modules/InDev/InDev"));
 const HomePage = dynamic(

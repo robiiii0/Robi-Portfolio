@@ -1,11 +1,10 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
-import { motion, useAnimation, useInView } from "framer-motion";
+import { useAnimation, useInView } from "framer-motion";
 import Image from "next/image";
 import imgMe from "@/public/IMG_6690.jpg";
 import { Transition } from "@/components/utils";
 import { useRouter } from "next/navigation";
-import Link from "next/link";
 
 const Finder = () => {
   const mainControls = useAnimation();
@@ -39,31 +38,6 @@ const Finder = () => {
       mainControls.start("hidden");
     }
   }, [isInView, mainControls, slideControls]);
-
-  const fadeInVariants = {
-    hidden: {
-      opacity: 0,
-      y: 20,
-    },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.8,
-        ease: "easeInOut",
-      },
-    },
-  };
-
-  const screenVariants = {
-    hidden: { x: "100vw" },
-    visible: { x: 0 },
-  };
-
-  const screenTransition = {
-    duration: 0.5,
-    ease: "easeInOut",
-  };
 
   return (
     <div className="bg-gray-900 h-full mt-12">

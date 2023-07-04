@@ -3,31 +3,9 @@ import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
 import img1 from "@/public/Robz_black.jpg";
 import Image from "next/image";
-import { componentsHome, componentsDescribe } from "@/components/modules";
-import { useRouter } from "next/router";
+import { componentsHome } from "@/components/modules";
 
-const MOBILE_NAV_ITEMS = [
-  {
-    id: 0,
-    navTitle: "home",
-    href: "/",
-  },
-  {
-    id: 1,
-    navTitle: "showreel",
-    href: "/",
-  },
-  {
-    id: 2,
-    navTitle: "services",
-    href: "/",
-  },
-  {
-    id: 3,
-    navTitle: "about",
-    href: "/",
-  },
-];
+
 
 export default function Hero() {
   const [isFrench, setIsFrench] = useState(false);
