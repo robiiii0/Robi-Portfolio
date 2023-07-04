@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import { Transition } from "@/components/utils";
 import { useEffect, useState } from "react";
-import img1 from "@/public/gk.png"
+import img1 from "@/public/gk.png";
 
 const TrustedClients = () => {
   const [isFrench, setIsFrench] = useState(false);
@@ -19,7 +19,7 @@ const TrustedClients = () => {
   }, []);
 
   return (
-      <>
+    <>
       <div className="flex flex-col items-center justify-center h-screen font-monserrat">
         <div className="text-center">
           <Transition.revealFromLeft>
@@ -30,22 +30,22 @@ const TrustedClients = () => {
           <div className="mx-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
             <Transition.revealFromLeft>
               <Image
-                  src="https://www.eloken.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FLogo.9cbeff77.png&w=1200&q=75"
-                  alt={isFrench ? "Clients de confiance" : "Trusted Clients"}
-                  width={300}
-                  height={200}
-                  className="rounded-md mt-12 mx-auto"
+                src="https://www.eloken.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2FLogo.9cbeff77.png&w=1200&q=75"
+                alt={isFrench ? "Clients de confiance" : "Trusted Clients"}
+                width={300}
+                height={200}
+                className="rounded-md mt-12 mx-auto"
               />
             </Transition.revealFromLeft>
           </div>
           <div className="mx-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl">
             <Transition.revealFromLeft>
               <Image
-                  src={img1}
-                  alt={isFrench ? "Clients de confiance" : "Trusted Clients"}
-                  width={300}
-                  height={200}
-                  className="rounded-md mt-12 mx-auto"
+                src={img1}
+                alt={isFrench ? "Clients de confiance" : "Trusted Clients"}
+                width={300}
+                height={200}
+                className="rounded-md mt-12 mx-auto"
               />
             </Transition.revealFromLeft>
           </div>
@@ -58,7 +58,7 @@ const TrustedClients = () => {
           {/*       />*/}
         </div>
       </div>
-      </>
+    </>
   );
 };
 
