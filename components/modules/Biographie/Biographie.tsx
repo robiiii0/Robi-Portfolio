@@ -1,9 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import {
-  motion,
-  useAnimation,
-} from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
 import Image from "next/image";
 import img1 from "@/public/78CE788D-F91A-4877-A768-A4DA0F8FB258.jpg";
 import "./styles.css";
@@ -14,8 +11,6 @@ import img6 from "@/public/Pasted Graphic.png";
 import img7 from "@/public/Pasted Graphic 1.png";
 import { Transition } from "@/components/utils";
 import { useRouter } from "next/navigation";
-
-
 
 export default function App() {
   const [isFrench, setIsFrench] = useState(false);

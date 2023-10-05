@@ -1,5 +1,5 @@
-'use client';
-import React, {useEffect, useState} from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import { Transition } from "@/components/utils";
 
@@ -20,7 +20,9 @@ export default function Skills() {
       <div className="w-screen h-screen flex flex-col justify-center items-center">
         <Transition.revealFromLeft>
           <h1 className="font-bold text-center md:text-left md:mt-0 mt-36">
-            {isFrench ? "Les langages de programmation que je pratique." : "The programming languages I practice."}
+            {isFrench
+              ? "Les langages de programmation que je pratique."
+              : "The programming languages I practice."}
           </h1>
         </Transition.revealFromLeft>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-8">

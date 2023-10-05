@@ -143,30 +143,30 @@ export default function Contact2() {
           <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
             <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
               {isFrench
-                  ? "© 2023 Robin Chabert™. Tous les droits sont réservés."
-                  : "© 2023 Robin Chabert™. All Rights Reserved."}
+                ? "© 2023 Robin Chabert™. Tous les droits sont réservés."
+                : "© 2023 Robin Chabert™. All Rights Reserved."}
             </span>
             <ul className="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
               <li>
                 <button
-                    onClick={() => router.push("/")}
-                    className="mr-4 hover:underline md:mr-6"
+                  onClick={() => router.push("/")}
+                  className="mr-4 hover:underline md:mr-6"
                 >
                   {isFrench ? "Accueil" : "Home"}
                 </button>
               </li>
               <li>
                 <button
-                    onClick={() => router.push("/aboutme")}
-                    className="mr-4 hover:underline md:mr-6 "
+                  onClick={() => router.push("/aboutme")}
+                  className="mr-4 hover:underline md:mr-6 "
                 >
                   {isFrench ? "À propos de moi" : "About me"}
                 </button>
               </li>
               <li>
                 <button
-                    onClick={() => router.push("/jobs")}
-                    className="hover:underline"
+                  onClick={() => router.push("/jobs")}
+                  className="hover:underline"
                 >
                   {isFrench ? "Emplois" : "Jobs"}
                 </button>

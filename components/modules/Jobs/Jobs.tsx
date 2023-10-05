@@ -2,10 +2,13 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import img2 from "public/Trello.png";
-import img1 from "public/image.png";
 import img3 from "@/public/gk.png";
+import img1 from "public/image.png";
+import img4 from "public/HiddenHills.png";
+import img5 from "public/IROC.png";
 import { Transition } from "@/components/utils";
 import { useRouter } from "next/navigation";
+import { JobCardComponent } from "./Modules/index";
 
 export default function Jobs() {
   const router = useRouter();
@@ -30,136 +33,57 @@ export default function Jobs() {
           </h1>
         </Transition.revealFromLeft>
 
-        <div>
-          <Transition.revealFromLeft>
-            <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700 w-10/12 mx-auto" />
-          </Transition.revealFromLeft>
+        <JobCardComponent.JobCardRight
+          resize={5}
+          title="Réalisation de composants réactifs pour le site web et les produits d'Eloken"
+          englishTitle="Realization of Responsive Components for Eloken's Website and Products"
+          description="Dans le cadre du projet de développement web d'Eloken, j'ai réalisé des composants réactifs pour leur site web et les produits présentés sur leur plateforme en ligne. En appliquant leur expertise en développement front-end."
+          englishDescription="In the context of Eloken, the web development project involved the realization of responsive components for both their website and the products featured on their online platform. By applying their expertise in front-end development."
+          imgSrc={img1}
+          competences={["Next.js", "Tailwind CSS"]}
+          route="https://eloken.com"
+        />
+        <JobCardComponent.JobCardLeft
+          resize={5}
+          title="Création d'un clone de haute qualité de Trello"
+          englishTitle="Creating a High-Quality Clone of Trello"
+          description="Dans le cadre de mon portfolio, j'ai entrepris le projet de créer un clone du célèbre site web Trello. Tout au long de cette entreprise, j'ai développé une interface réactive et intuitive qui reproduit fidèlement les fonctionnalités principales de Trello."
+          englishDescription="In the context of my portfolio, I undertook the project of creating a clone of the renowned website Trello. Throughout this endeavor, I successfully developed a responsive and intuitive interface that faithfully replicated the core features and functionalities of Trello."
+          route="https://trello.com"
+          competences={["Next.js", "Tailwind CSS"]}
+          imgSrc={img2}
+        />
 
-          <div className="flex flex-col lg:flex-row justify-between w-screen px-6 lg:w-3/4 mx-auto lg:gap-8 items-center">
-            <div className="w-full lg:w-1/3">
-              <Transition.revealFromLeft>
-                <p className="font-Monserat text-base md:text-2xl px-4 mt-4 md:mt-24 font-bold mb-4 lg:mb-8">
-                  {isFrench
-                    ? "Réalisation de composants réactifs pour le site web et les produits d'Eloken"
-                    : "Realization of Responsive Components for Eloken's Website and Products"}
-                </p>
-              </Transition.revealFromLeft>
-              <Transition.revealFromLeft>
-                <p className="font-Monserat text-sm md:text-lg px-4  mt-12 md:mt-0">
-                  {isFrench
-                    ? "Dans le cadre du projet de développement web d'Eloken, j'ai réalisé des composants réactifs pour leur site web et les produits présentés sur leur plateforme en ligne. En appliquant leur expertise en développement front-end."
-                    : "In the context of Eloken, the web development project involved the realization of responsive components for both their website and the products featured on their online platform. By applying their expertise in front-end development."}
-                </p>
-              </Transition.revealFromLeft>
-              <div className="flex text-sm md:text-lg mt-12 md:mt-5 ">
-                <p className="rounded-2xl bg-gray-500 py-2 px-4 text-white ">
-                  Next.js
-                </p>
-                <p className="rounded-2xl bg-gray-500 py-2 px-4 text-white ml-5">
-                  Tailwind
-                </p>
-              </div>
-            </div>
-
-            <button
-              onClick={() => router.push("https://eloken.com")}
-              className="hover:scale-110 transition duration-300 text-sm mt-12 md:mt-0 md:text-lg px-4 "
-            >
-              <Transition.revealFromLeft>
-                <Image
-                  src={img1}
-                  width={img1.width / 5}
-                  height={img1.height}
-                  alt="/"
-                />
-              </Transition.revealFromLeft>
-            </button>
-          </div>
-        </div>
-
-        <div>
-          <Transition.revealFromLeft>
-            <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700  w-10/12 mx-auto" />
-          </Transition.revealFromLeft>
-          <div className="flex flex-col-reverse lg:flex-row justify-between px-6  w-11/12 lg:w-3/4 mx-auto lg:gap-8 items-center">
-            <button
-              onClick={() => router.push("https://trello.com")}
-              className="hover:scale-110 transition duration-300  mt-12 md:mt-0"
-            >
-              <Transition.revealFromLeft>
-                <Image
-                  src={img2}
-                  width={img2.width / 5}
-                  height={img2.height}
-                  alt="/"
-                />
-              </Transition.revealFromLeft>
-            </button>
-            <div className="w-full lg:w-1/3">
-              <Transition.revealFromLeft>
-                <p className="font-Monserat text-base md:text-lg mt-12 md:mt-24 font-bold mb-4 lg:mb-8">
-                  {isFrench
-                    ? "Création d'un clone de haute qualité de Trello"
-                    : "Creating a High-Quality Clone of Trello"}
-                </p>
-              </Transition.revealFromLeft>
-              <Transition.revealFromLeft>
-                <p className="font-Monserat text-sm md:text-lg mt-5 md:mt-12">
-                  {isFrench
-                    ? "Dans le cadre de mon portfolio, j'ai entrepris le projet de créer un clone du célèbre site web Trello. Tout au long de cette entreprise, j'ai développé une interface réactive et intuitive qui reproduit fidèlement les fonctionnalités principales de Trello."
-                    : "In the context of my portfolio, I undertook the project of creating a clone of the renowned website Trello. Throughout this endeavor, I successfully developed a responsive and intuitive interface that faithfully replicated the core features and functionalities of Trello."}
-                </p>
-              </Transition.revealFromLeft>
-              <div className="flex text-sm md:text-lg mt-5 md:mt-24">
-                <Transition.revealFromLeft>
-                  <p className="rounded-2xl bg-gray-500 py-2 px-4 text-white">
-                    Next.js
-                  </p>
-                </Transition.revealFromLeft>
-                <Transition.revealFromLeft>
-                  <p className="rounded-2xl bg-gray-500 py-2 px-4 text-white ml-5">
-                    Tailwind
-                  </p>
-                </Transition.revealFromLeft>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex flex-col lg:flex-row justify-between w-screen px-6 lg:w-3/4 mx-auto lg:gap-8 items-center">
-          <div className="w-full lg:w-1/3">
-            <Transition.revealFromLeft>
-              <p className="font-Monserat text-base md:text-2xl px-4 mt-4 md:mt-24 font-bold mb-4 lg:mb-8">
-                {isFrench
-                  ? "Réalisation d'une application mobile chez GamersKingdoms"
-                  : "Development of a Mobile Application at GamersKingdoms"}
-              </p>
-            </Transition.revealFromLeft>
-            <Transition.revealFromLeft>
-              <p className="font-Monserat text-sm md:text-lg px-4 mt-12 md:mt-0">
-                {isFrench
-                  ? "Pendant une période de 4 mois, j'ai réalisé un stage chez GamersKingdoms, où j'ai été chargé de développer une application mobile. Malheureusement, en raison de son état actuel de développement, je ne suis pas en mesure de présenter des images de l'application."
-                  : "During a 4-month period, I completed an internship at GamersKingdoms, where I was tasked with developing a mobile application. Unfortunately, due to its current development stage, I am unable to showcase any images of the application."}
-              </p>
-            </Transition.revealFromLeft>
-            <div className="flex text-sm md:text-lg mt-12 md:mt-5 ">
-              <p className="rounded-2xl bg-gray-500 py-2 px-4 text-white ">
-                React native
-              </p>
-            </div>
-          </div>
-
-          <div className="hover:scale-110 transition duration-300 text-sm mt-12 md:mt-0 md:text-lg px-4 ">
-            <Transition.revealFromLeft>
-              <Image
-                src={img3}
-                width={img3.width / 3}
-                height={img3.height}
-                alt="/"
-              />
-            </Transition.revealFromLeft>
-          </div>
-        </div>
+        <JobCardComponent.JobCardRight
+          resize={2}
+          title="Réalisation d'une application mobile chez GK"
+          englishTitle="Development of a Mobile Application at GK"
+          description="Pendant une période de 4 mois, j'ai réalisé un stage chez GK, où j'ai été chargé de développer une application mobile. Malheureusement, en raison de son état actuel de développement, je ne suis pas en mesure de présenter des images de l'application."
+          englishDescription="During a 4-month period, I completed an internship at GK, where I was tasked with developing a mobile application. Unfortunately, due to its current development stage, I am unable to showcase any images of the application."
+          imgSrc={img3}
+          competences={["React Native"]}
+          route="#"
+        />
+        <JobCardComponent.JobCardLeft
+          resize={3}
+          title="Collaboration avec HiddensHills"
+          englishTitle="Collaboration with HiddensHills"
+          description="Lors d'une mission en freelance j'ai dû concevoir de nouvelles fonctionnalités pour le site E-commerce de HiddensHills, une société basée à Los Angeles, je me suis donc occupé de toute la partie front-end."
+          englishDescription="During a freelance mission I had to design new features for the E-commerce site of HiddensHills, a company based in Los Angeles, so I took care of the entire front-end part."
+          route="hidden-hills.vercel.app"
+          competences={["Next.js", "Tailwind CSS", "English"]}
+          imgSrc={img4}
+        />
+        <JobCardComponent.JobCardRight
+          resize={3}
+          title="Developpement Full-Stack Chez IROC"
+          englishTitle="Full-Stack Development at IROC"
+          description="Pendant une période de 1 mois, j'ai réalisé une mission en freelance chez IROC, où j'ai été chargé de développer de nouvelles features en front-end et en back-end ainsi que de maintenanir le back-end et la base de donnée de l'application"
+          englishDescription="During 1 month, I carried out a freelance mission at IROC, where I was responsible for developing new front-end and back-end features as well as maintaining the back-end and the application database"
+          imgSrc={img5}
+          competences={["React.js", "MongoDb", "AWS", "Python"]}
+          route="https://www.iroc.app/"
+        />
 
         <div className="mt-36"></div>
         <div>

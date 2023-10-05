@@ -5,8 +5,6 @@ import img1 from "@/public/Robz_black.jpg";
 import Image from "next/image";
 import { componentsHome } from "@/components/modules";
 
-
-
 export default function Hero() {
   const [isFrench, setIsFrench] = useState(false);
 
