@@ -5,7 +5,12 @@ import img1 from "@/public/Robz_black.jpg";
 import Image from "next/image";
 import { componentsHome } from "@/components/modules";
 
-export default function Hero() {
+interface HeroProps {
+  loadingAnimation: boolean;
+  setLoadingAnimation: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+export default function Hero({ loadingAnimation, setLoadingAnimation }: HeroProps) {
   const [isFrench, setIsFrench] = useState(false);
 
   useEffect(() => {
@@ -21,11 +26,9 @@ export default function Hero() {
   }, []);
   const screenAnimation = useAnimation();
   const textAnimation = useAnimation();
-  const [animationComplete, setAnimationComplete] = useState(false);
 
   useEffect(() => {
     const startAnimation = async () => {
-      // Wait for 4 seconds
       await new Promise((resolve) => setTimeout(resolve, 4000));
 
       screenAnimation.start({
@@ -38,7 +41,6 @@ export default function Hero() {
         },
       });
 
-      // Trigger the text disappearance animation
       textAnimation.start({
         y: -100,
         opacity: 0,
@@ -47,8 +49,7 @@ export default function Hero() {
           ease: "easeInOut",
         },
       });
-
-      setAnimationComplete(true);
+      setLoadingAnimation(true);
     };
 
     startAnimation();
@@ -194,8 +195,7 @@ export default function Hero() {
           {isFrench ? "Bienvenue sur mon site" : "Welcome to my website"}
         </motion.h2>
       </motion.div>
-
-      {animationComplete && (
+      {loadingAnimation && (
         <>
           <div>
             <div className="text-6xl font-rubik font-mono space-y-5 mt-24">

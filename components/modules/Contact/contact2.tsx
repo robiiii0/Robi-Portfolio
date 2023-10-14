@@ -103,7 +103,7 @@ export default function Contact2() {
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="h-8 w-8 md:h-20 md:w-20"
+                            className="h-8 w-8 md:h-20 text-blue-500 md:w-20"
                             fill="currentColor"
                             viewBox="0 0 24 24"
                           >
@@ -122,7 +122,7 @@ export default function Contact2() {
                         >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            className="h-8 w-8 md:h-20 md:w-20"
+                            className="h-8 w-8 md:h-20 text-gray-700 md:w-20"
                             fill="currentColor"
                             viewBox="0 0 24 24"
                           >

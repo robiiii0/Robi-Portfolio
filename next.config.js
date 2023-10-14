@@ -10,7 +10,7 @@ module.exports = {
       "support.apple.com",
       "help.apple.com",
       "img.freepik.com",
-      "eloken.com",
+      "www.eloken.com",
     ],
   },
 };
